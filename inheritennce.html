@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class car{
+            setName(name){
+                this.name=name;
+            }
+            topspeed(speed){
+                this.speed=speed;
+                console.log('top speed of car is:'+this.speed);
+            }
+        }
+        class ford extends car{
+            carModel(model){
+                this.model=model;
+                console.log('model of car is:'+this.model);
+            }
+
+        }
+        let Car=new ford();
+        Car.setName('ford');
+        Car.topspeed(200);
+        Car.carModel('Endevor')
+    </script>
+</head>
+<body>
+    <h1>In programming, inheritance refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one. JavaScript implements inheritance by using objects.</h1>
+    
+</body>
+</html>

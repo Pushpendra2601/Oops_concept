@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Animal {
+            animalSound() {
+                console.log("The animal makes a sound");
+            }
+        }
+
+        class Pig extends Animal {
+            animalSound() {
+                console.log("The pig says: wee wee");
+            }
+        }
+
+        class Dog extends Animal {
+            animalSound() {
+                console.log("The dog says: bow wow");
+            }
+        }
+        let pig=new Pig();
+        pig.animalSound();
+        let dog=new Dog();
+        dog.animalSound();
+
+    </script>
+</head>
+<body>
+    <h1>Polymorphism means the same function with different signatures is called many times</h1>
+    
+</body>
+</html>
