@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        async function Myfunction(){
+            let delay1 =new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("pushpya")
+                },2000)
+            })
+            let delay2 =new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve("vishwakarma")
+                })
+            })        
+            let d1= await delay1;
+            let d2= await delay2;
+            return [d1,d2]
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
